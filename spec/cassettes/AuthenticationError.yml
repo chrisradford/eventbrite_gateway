@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.eventbrite.com/json/user_list_events?
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer TESTING
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sat, 18 Jan 2014 23:47:31 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      X-Service:
+      - djc
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache, must-revalidate, no-cache="Set-Cookie", private
+      P3p:
+      - CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM"
+      Set-Cookie:
+      - AN=; Domain=.eventbrite.com; expires=Thu, 01-Jan-1970 00:00:00 GMT; httponly;
+        Path=/
+      - G=v%3D1%26i%3D415aed07-709f-4d12-ae11-ad6d46d9d1b6%26a%3D3e1%26s%3DAPDvTK6FpxzPhT8nBnkXHhWOW2BQgyBKhg;
+        Domain=.eventbrite.com; expires=Sun, 18-Jan-2015 23:47:31 GMT; httponly; Path=/
+      - SP=AGQgbbmzFR7J52IO5d1MAlcMQJZSeBcqzlryP2ny0GKTaDWm919UAP5UvjP0oek2LJKf4llRBKloo7YnkxvSKM0UGRavbxsK6eD9x6bTZO3M6uQ7MJXz2_lOxQtmxEWWJW9nkWioAa_-sQ-QFwH3neFLFZQdEWOk8u-6wx-AsQlM5foMsnU7LMrziWMDxQz9SfWUD9W9OFwfcqQeT1-igMA9r6u6fTHPHBagylOdumVaFx4htD-a1A4;
+        Domain=.eventbrite.com; httponly; Path=/
+      - SS=AE3DLHR3Pen1HfiT9gIXufvN3G7bzxVc2w; Domain=.eventbrite.com; httponly; Path=/;
+        secure
+      - eblang=lo%3Den_US%26la%3Den-us; Domain=.eventbrite.com; expires=Sun, 18-Jan-2015
+        23:47:31 GMT; httponly; Path=/
+      - mgref=typeins; Domain=.eventbrite.com; expires=Sun, 18-Jan-2015 23:47:31 GMT;
+        httponly; Max-Age=31536000; Path=/
+      - mgrefby=; Domain=.eventbrite.com; expires=Sun, 18-Jan-2015 23:47:31 GMT; httponly;
+        Max-Age=31536000; Path=/
+    body:
+      encoding: US-ASCII
+      string: ! '{"error": {"error_type": "Authentication Error", "error_message":
+        "Invalid oauth token"}}'
+    http_version: 
+  recorded_at: Sat, 18 Jan 2014 23:47:31 GMT
+recorded_with: VCR 2.8.0

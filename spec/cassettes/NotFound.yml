@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.eventbrite.com/json/event_get?
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer FFWGYODVYSN2LXMCNFNW
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sat, 18 Jan 2014 23:47:33 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      X-Service:
+      - djc
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache, must-revalidate, no-cache="Set-Cookie", private
+      P3p:
+      - CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM"
+      Set-Cookie:
+      - AN=; Domain=.eventbrite.com; expires=Thu, 01-Jan-1970 00:00:00 GMT; httponly;
+        Path=/
+      - G=v%3D1%26i%3Df04e24dc-f17b-45cd-a534-4068c53f62f2%26a%3D3e1%26s%3DAPDvTK7KTcsQgVxlxGxTFecF6GHL5mFCoA;
+        Domain=.eventbrite.com; expires=Sun, 18-Jan-2015 23:47:33 GMT; httponly; Path=/
+      - SP=AGQgbbkWoU82w26kTpdu2cbwffB1UWIywjNQ8PBDvwMqIJx-5NUqeKVVaNQwxj5sZwX5Smsiko0CtpBTXvqpFZsWWimIarjeVFTTC46tItIOgtDRF4AhRM6SK7cd-boJGI-4rqH9y8tV78JND7gq2vs4nHlGtVV7lcQjQjFG5eMDqf8yeGIrNyPUufPo0P8jRH_tp78mwfUBdLPvfkeTU4as54IxvmgUDhQnifynPIaUkUfobmFEx4c;
+        Domain=.eventbrite.com; httponly; Path=/
+      - SS=AE3DLHSwD0qx_lfU8uKPjaZ9-geNvsxZTg; Domain=.eventbrite.com; httponly; Path=/;
+        secure
+      - eblang=lo%3Den_US%26la%3Den-us; Domain=.eventbrite.com; expires=Sun, 18-Jan-2015
+        23:47:33 GMT; httponly; Path=/
+      - mgref=typeins; Domain=.eventbrite.com; expires=Sun, 18-Jan-2015 23:47:33 GMT;
+        httponly; Max-Age=31536000; Path=/
+      - mgrefby=; Domain=.eventbrite.com; expires=Sun, 18-Jan-2015 23:47:33 GMT; httponly;
+        Max-Age=31536000; Path=/
+    body:
+      encoding: US-ASCII
+      string: ! '{"error": {"error_type": "Not Found", "error_message": "No records
+        were found with the given parameters."}}'
+    http_version: 
+  recorded_at: Sat, 18 Jan 2014 23:47:33 GMT
+recorded_with: VCR 2.8.0

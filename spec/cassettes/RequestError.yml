@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.eventbrite.com/json/not_an_endpoint?
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer TESTING
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sat, 18 Jan 2014 23:47:32 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      X-Service:
+      - djc
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache, must-revalidate, no-cache="Set-Cookie", private
+      P3p:
+      - CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM"
+      Set-Cookie:
+      - AN=; Domain=.eventbrite.com; expires=Thu, 01-Jan-1970 00:00:00 GMT; httponly;
+        Path=/
+      - G=v%3D1%26i%3D7d0cde85-514b-49ce-88e2-a327c1d2ab3c%26a%3D3e1%26s%3DAPDvTK4jvi41Jou62RTPk5Pr56xi7zZWxw;
+        Domain=.eventbrite.com; expires=Sun, 18-Jan-2015 23:47:32 GMT; httponly; Path=/
+      - SP=AGQgbbmoOMCIuD9oaYuKwNoWpY_ON-yEwVIRZUqJmUTYAjB7BNne_941yQt4_vIG6I_791fZ6SRF95XtNhwUaDx2ZQpAPDJdI5GZVRkMXnmDWNCCKQuw3obf4fyVSoBjS6EV847ZTTa679E0aPasWeB1zRVC4p90tjOwLfWp5-ELfc34IT9iOGv3LUm1jC1cMSLOw3bZZi5XTVUZQTByXevj0G6rRrZzYC1LGJ7y83tYBqJC12m3KnE;
+        Domain=.eventbrite.com; httponly; Path=/
+      - SS=AE3DLHQuQxkT_AGqqE1ET-E29SJllQ_saQ; Domain=.eventbrite.com; httponly; Path=/;
+        secure
+      - eblang=lo%3Den_US%26la%3Den-us; Domain=.eventbrite.com; expires=Sun, 18-Jan-2015
+        23:47:32 GMT; httponly; Path=/
+      - mgref=typeins; Domain=.eventbrite.com; expires=Sun, 18-Jan-2015 23:47:32 GMT;
+        httponly; Max-Age=31536000; Path=/
+      - mgrefby=; Domain=.eventbrite.com; expires=Sun, 18-Jan-2015 23:47:32 GMT; httponly;
+        Max-Age=31536000; Path=/
+    body:
+      encoding: US-ASCII
+      string: ! '{"error": {"error_type": "Request Error", "error_message": "Not a
+        valid API command.  Please check the documentation."}}'
+    http_version: 
+  recorded_at: Sat, 18 Jan 2014 23:47:32 GMT
+recorded_with: VCR 2.8.0
