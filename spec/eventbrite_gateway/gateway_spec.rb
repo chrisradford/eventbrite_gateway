@@ -30,5 +30,15 @@ describe EventbriteGateway::Gateway do
       EventbriteGateway::Gateway.new(EBClient.new(nil)).
         user_list_tickets.must_be_instance_of Array
     end
+
+    it "returns a Hash for User get" do
+      EventbriteGateway::Gateway.new(EBClient.new(:user_get)).
+        user_get.must_be_instance_of Hash
+    end
+
+    it "return a Hash for empty User get" do
+      EventbriteGateway::Gateway.new(EBClient.new(nil)).
+        user_get.must_be_instance_of Hash
+    end
   end
 end

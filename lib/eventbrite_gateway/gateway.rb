@@ -24,7 +24,7 @@ module EventbriteGateway
 
     def object_method method_name, *args, &block
       response = @client.call(method_name, *args, &block)
-      key = method_name.split('_')[-1].to_s
+      key = method_name.to_s.split('_')[0]
       response[key]
     rescue RuntimeError => e
       {}
